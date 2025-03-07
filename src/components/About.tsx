@@ -25,11 +25,24 @@ const About = () => {
     }
   ];
 
+  
+
+  const testimonials = [
+    {
+      name: "Varad Neve",
+      feedback: "Vinovaa Institute provided me with the skills and knowledge I needed to excel in my career. The faculty is incredibly supportive!"
+    },
+    {
+      name: "Karan Sharma",
+      feedback: "The hands-on training and real-world projects made all the difference. I felt prepared for the job market."
+    }
+  ];
+
   return (
     <section id="about" className="bg-gray-50">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="heading-primary">About Vinovaa Institute</h2>
+          <h2 className="heading-primary">About Vinovaa Institute of Technology</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Vinovaa Institute of Technology is a premier educational institution
             dedicated to empowering students with cutting-edge technical education
@@ -40,7 +53,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+              src="https://media-hosting.imagekit.io//1c0a64bd006840ee/gettyimages-1429680603-612x612.jpg?Expires=1835973877&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HDz0Ba8qGV0dfRkNK4EGET~cVLHZEKSy4oQs32MKuUduBt-maTyETLV4gMjLKqd3hTVldLP5PxgDkWmSkp2tY-ALD3Ky343xrHjzzyq5mjTjc4I98jidStKoU9eHRNahw1tzmwPot119RfFZKNLUAoCYkVoaEXZeGKHPH9Mxmr46Z2aZjaLt9K0hc2NrQL6fP108JwF40oyHE5m~WqoJyW3qA1HPw0L~MiTj8UySDVIMg-ed9-6HAODY6k0e7MM~6YLO4ySv45vq6NJe8H~M8mdhrNxgM1N7TqQWK~2tbveDGh6WxHU81OWfxDAxnSa-XBXQt1GziGKJrnhTQjIp-A__"
               alt="Students collaborating"
               className="rounded-lg shadow-lg"
             />
@@ -76,6 +89,28 @@ const About = () => {
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
+        </div>
+
+        
+        {/* Testimonials Section */}
+        <div className="mt-16">
+          <h3 className="heading-secondary text-center mb-6">What Our Students Say</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <p className="text-gray-600 italic">"{testimonial.feedback}"</p>
+                <p className="text-right font-semibold mt-4">- {testimonial.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Accreditations Section */}
+        <div className="mt-16 text-center">
+          <h3 className="heading-secondary mb-6">Accreditations & Partnerships</h3>
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            We are proud to be accredited by various educational bodies and have partnerships with leading industry organizations to ensure our programs meet the highest standards.
+          </p>
         </div>
       </div>
     </section>
