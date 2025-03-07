@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Users, BookOpen } from 'lucide-react';
+import { Clock, Users } from 'lucide-react';
 
 const Courses = () => {
   const courses = [
@@ -19,6 +19,13 @@ const Courses = () => {
           eligibility: "Graduate in any stream",
           fee: "₹35,000",
           topics: ["Python", "Statistics", "Machine Learning", "Data Visualization"]
+        },
+        {
+          name: "Mobile App Development",
+          duration: "5 months",
+          eligibility: "10+2 with basic computer knowledge",
+          fee: "₹40,000",
+          topics: ["Flutter", "Dart", "Firebase", "UI/UX Design"]
         }
       ]
     },
@@ -31,6 +38,13 @@ const Courses = () => {
           eligibility: "10+2 in Commerce",
           fee: "₹15,000",
           topics: ["Tally Prime", "GST", "Banking", "Inventory Management"]
+        },
+        {
+          name: "Financial Accounting",
+          duration: "4 months",
+          eligibility: "10+2 in Commerce",
+          fee: "₹20,000",
+          topics: ["Basic Accounting Principles", "Financial Statements", "Cost Accounting", "Taxation"]
         }
       ]
     },
@@ -43,6 +57,13 @@ const Courses = () => {
           eligibility: "Graduate in any stream",
           fee: "₹25,000",
           topics: ["SEO", "Social Media Marketing", "Content Marketing", "Email Marketing"]
+        },
+        {
+          name: "Project Management",
+          duration: "5 months",
+          eligibility: "Graduate in any stream",
+          fee: "₹30,000",
+          topics: ["Agile Methodology", "Risk Management", "Project Planning", "Team Leadership"]
         }
       ]
     }
