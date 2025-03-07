@@ -147,26 +147,26 @@ const Contact = () => {
             <div>
               <h3 className="heading-secondary">Contact Information</h3>
               <div className="space-y-4">
-                <motion.div 
+              <motion.div 
                   className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Phone className="h-5 w-5 text-blue-600 mr-3" />
-                  <span>+91 1234567890</span>
+                  <span>+91 9404211197</span>
                 </motion.div>
                 <motion.div 
                   className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Mail className="h-5 w-5 text-blue-600 mr-3" />
-                  <span>info@vinovaainstitute.com</span>
+                  <span>vinovaainstitute@gmail.com</span>
                 </motion.div>
                 <motion.div 
                   className="flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
                   whileHover={{ scale: 1.02 }}
                 >
                   <MapPin className="h-5 w-5 text-blue-600 mr-3 mt-1" />
-                  <span>123 Education Hub, Tech Park Road,<br />Bangalore - 560001</span>
+                  <span>3rd floor, Indira Heights, Old Gangapur Naka<br />Nashik.</span>
                 </motion.div>
                 <motion.div 
                   className="flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
@@ -186,7 +186,7 @@ const Contact = () => {
                 transition={{ duration: 0.3 }}
               >
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5997798858874!2d77.5945627!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzI3LjgiTiA3N8KwMzUnNDAuNCJF!5e0!3m2!1sen!2sin!4v1635825247425!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.0253580248605!2d73.77190089999999!3d20.0074504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba270864883%3A0x1c0ebc79ac4b4269!2sIndira%20Heights!5e0!3m2!1sen!2sin!4v1741367354813!5m2!1sen!2sin"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
