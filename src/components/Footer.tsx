@@ -1,5 +1,6 @@
 import React from 'react';
 import { GraduationCap, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -20,20 +21,21 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-400 hover:text-white">About Us</a></li>
-              <li><a href="#courses" className="text-gray-400 hover:text-white">Courses</a></li>
-              <li><a href="#infrastructure" className="text-gray-400 hover:text-white">Infrastructure</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white">Contact</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white">Home</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
+              <li><Link to="/courses" className="text-gray-400 hover:text-white">Courses</Link></li>
+              <li><Link to="/infrastructure" className="text-gray-400 hover:text-white">Infrastructure</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Courses</h4>
+            <h4 className="text-lg font-semibold mb-4">Popular Courses</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">Web Development</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Data Science</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Tally with GST</a></li>
+              <li><Link to="/courses" className="text-gray-400 hover:text-white">Web Development</Link></li>
+              <li><Link to="/courses" className="text-gray-400 hover:text-white">Data Science</Link></li>
+              <li><Link to="/courses" className="text-gray-400 hover:text-white">Digital Marketing</Link></li>
+              <li><Link to="/courses" className="text-gray-400 hover:text-white">Tally with GST</Link></li>
             </ul>
           </div>
 
