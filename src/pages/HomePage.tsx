@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -6,11 +6,11 @@ import Courses from '../components/Courses';
 import NTACenter from '../components/NTACenter';
 import Infrastructure from '../components/Infrastructure';
 import Testimonials from '../components/Testimonials';
-import Contact from '../components/Contact';
 import { ArrowUpCircle } from 'lucide-react';
 
 const HomePage = () => {
   const [showScrollTop, setShowScrollTop] = React.useState(false);
+  const coursesRef = useRef(null); // Create a ref for the courses section
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +25,12 @@ const HomePage = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const scrollToCourses = () => {
+    if (coursesRef.current) {
+      coursesRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
@@ -37,7 +43,7 @@ const HomePage = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Hero />
+      <Hero scrollToCourses={scrollToCourses} />
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -48,6 +54,7 @@ const HomePage = () => {
         <About />
       </motion.div>
       <motion.div
+        ref={coursesRef} // Attach the ref to the Courses section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -83,15 +90,11 @@ const HomePage = () => {
       >
         <Testimonials />
       </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        variants={fadeInUpVariants}
-      >
-        <Contact />
-      </motion.div>
+
+      {/* Always Visible Contact Button */}
+      <a href="/contact" className="fixed bottom-8 right-8 bg-green-600 text-white p-4 rounded-lg shadow-lg z-50">
+        Contact Us
+      </a>
 
       {/* Scroll to Top Button */}
       <motion.button
@@ -107,11 +110,6 @@ const HomePage = () => {
       >
         <ArrowUpCircle className="h-6 w-6" />
       </motion.button>
-
-      {/* Always Visible Contact Button */}
-      <a href="/contact" className="fixed bottom-8 right-8 bg-green-600 text-white p-4 rounded-lg shadow-lg z-50">
-        Contact Us
-      </a>
     </motion.div>
   );
 };
