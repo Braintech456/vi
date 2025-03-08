@@ -108,7 +108,9 @@ const Courses = () => {
                       </div>
                       <div className="flex items-center justify-between mt-6">
                         <div className="text-xl font-bold text-blue-600">{course.fee}</div>
-                        <button className="btn-primary">Enroll Now</button>
+                        <button className="btn-primary">
+                         <a href="/contact" className="text-white">Enroll Now</a>
+                        </button>
                       </div>
                     </div>
                   </div>
