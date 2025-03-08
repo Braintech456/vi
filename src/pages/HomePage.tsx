@@ -95,7 +95,7 @@ const HomePage = () => {
 
       {/* Scroll to Top Button */}
       <motion.button
-        className="fixed bottom-8 right-8 bg-blue-600 text-white p-2 rounded-full shadow-lg z-50"
+        className="fixed bottom-20 right-8 bg-blue-600 text-white p-2 rounded-full shadow-lg z-50"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ 
           opacity: showScrollTop ? 1 : 0,
@@ -107,6 +107,11 @@ const HomePage = () => {
       >
         <ArrowUpCircle className="h-6 w-6" />
       </motion.button>
+
+      {/* Always Visible Contact Button */}
+      <a href="/contact" className="fixed bottom-8 right-8 bg-green-600 text-white p-4 rounded-lg shadow-lg z-50">
+        Contact Us
+      </a>
     </motion.div>
   );
 };
