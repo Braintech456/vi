@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-const Hero = () => {
+const Hero = ({ scrollToCourses }) => {
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80",
@@ -54,8 +54,9 @@ const Hero = () => {
               professional development at Vinovaa Institute of Technology
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="btn-primary">Explore Courses</button>
-              {/* Removed Contact Us button */}
+              <button className="btn-primary" onClick={scrollToCourses}>
+                Explore Courses
+              </button>
             </div>
           </div>
         </div>
