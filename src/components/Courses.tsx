@@ -10,21 +10,21 @@ const Courses = () => {
           name: "Full Stack Web Development",
           duration: "6 months",
           eligibility: "10+2 with basic computer knowledge",
-          fee: "₹45,000",
+          fee: "45,000 INR",
           topics: ["HTML/CSS", "JavaScript", "React", "Node.js", "Database Management"]
         },
         {
           name: "Data Science & Analytics",
           duration: "4 months",
           eligibility: "Graduate in any stream",
-          fee: "₹35,000",
+          fee: "35,000 INR",
           topics: ["Python", "Statistics", "Machine Learning", "Data Visualization"]
         },
         {
           name: "Mobile App Development",
           duration: "5 months",
           eligibility: "10+2 with basic computer knowledge",
-          fee: "₹40,000",
+          fee: "40,000 INR",
           topics: ["Flutter", "Dart", "Firebase", "UI/UX Design"]
         }
       ]
@@ -36,14 +36,14 @@ const Courses = () => {
           name: "Advanced Tally with GST",
           duration: "3 months",
           eligibility: "10+2 in Commerce",
-          fee: "₹15,000",
+          fee: "15,000 INR",
           topics: ["Tally Prime", "GST", "Banking", "Inventory Management"]
         },
         {
           name: "Financial Accounting",
           duration: "4 months",
           eligibility: "10+2 in Commerce",
-          fee: "₹20,000",
+          fee: "20,000 INR",
           topics: ["Basic Accounting Principles", "Financial Statements", "Cost Accounting", "Taxation"]
         }
       ]
@@ -55,14 +55,14 @@ const Courses = () => {
           name: "Digital Marketing",
           duration: "4 months",
           eligibility: "Graduate in any stream",
-          fee: "₹25,000",
+          fee: "25,000 INR",
           topics: ["SEO", "Social Media Marketing", "Content Marketing", "Email Marketing"]
         },
         {
           name: "Project Management",
           duration: "5 months",
           eligibility: "Graduate in any stream",
-          fee: "₹30,000",
+          fee: "30,000 INR",
           topics: ["Agile Methodology", "Risk Management", "Project Planning", "Team Leadership"]
         }
       ]
